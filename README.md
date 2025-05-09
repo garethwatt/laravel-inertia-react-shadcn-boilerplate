@@ -25,10 +25,12 @@ if cloning project:
 php artisan key:generate
 
 
-
+Login to backend:
 application-url/admin
 user: admin@admin.com
 password: 123456789
+
+Create the main menu and call it “primary”
 
 
 
