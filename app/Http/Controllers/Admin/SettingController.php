@@ -32,10 +32,12 @@ class SettingController extends Controller
         foreach ($settings as $key => $value) {
             $setting = Setting::where('key', $key)->first();
             if ($setting) {
-                if($setting->type == 'image' || $setting->type == 'file') {
+                if ($setting->type == 'image' || $setting->type == 'file') {
                     $file = $request->file($key);
-                    if($file)
-                        $value = '/storage/' . $file->storePubliclyAs('', $key . '-' . $file->getClientOriginalName());
+                    if ($file) {
+                        $path = $file->storePubliclyAs('', $key . '-' . $file->getClientOriginalName(), 'public');
+                        $value = '/storage/' . $path;
+                    }
                 }
                 $setting->value = $value;
                 $setting->save();
