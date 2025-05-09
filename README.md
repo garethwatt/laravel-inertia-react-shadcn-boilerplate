@@ -1,3 +1,45 @@
+
+## Installation New 
+
+Follow these steps to set up the project locally.
+
+### 1. Clone project
+
+```bash
+git clone URL
+```
+
+### 2. Install packages
+
+```bash
+composer update
+npm install
+```
+
+### 4. Run Migrations
+```bash
+php artisan migrate --seed
+```
+
+if cloning project:
+php artisan key:generate
+
+
+
+application-url/admin
+user: admin@admin.com
+password: 123456789
+
+
+
+
+
+
+### 3. Set Up Environment Variables
+Configure your **database** and other environment variables in _.env_ file:
+
+
+
 # CMS Built with Laravel + React + Inertia.js + Shadcn
 
 This project is a modern Content Management System (CMS) built using Laravel for the backend, React for the frontend, Inertia.js for seamless single-page app functionality, and Shadcn for elegant, customizable UI components. Additionally, it integrates **[PUCK](https://github.com/measuredco/puck)**, a visual editor for React, allowing developers to easily create and customize components using WYSIWYG (What You See Is What You Get) functionality and a drag-and-drop interface.
