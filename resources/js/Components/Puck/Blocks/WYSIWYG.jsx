@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { Autofield } from "@measured/puck";
+import { AutoField } from "@measured/puck";
 import { marginFields, paddingFields } from "./CommonBlockProps";
 import {
     Dialog,

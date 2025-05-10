@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { Autofield } from "@measured/puck";
+import { AutoField } from "@measured/puck";
 import { bgColorField, borderField, borderRadiusField, marginFields, paddingFields, textColorField } from "./CommonBlockProps";
 
 export const Heading = {
@@ -65,9 +65,8 @@ export const Heading = {
             case "h1":
                 return (
                     <h1
-                        className={`block scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl ${
-                            align ? "text-" + align : ""
-                        } `}
+                        className={`block scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl ${align ? "text-" + align : ""
+                            } `}
                         style={{
                             ...marginFields.style(margin),
                             ...paddingFields.style(padding),
@@ -83,9 +82,8 @@ export const Heading = {
             case "h2":
                 return (
                     <h2
-                        className={`block scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 ${
-                            align ? "text-" + align : ""
-                        } `}
+                        className={`block scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 ${align ? "text-" + align : ""
+                            } `}
                         style={{
                             ...marginFields.style(margin),
                             ...paddingFields.style(padding),
@@ -101,9 +99,8 @@ export const Heading = {
             case "h3":
                 return (
                     <h3
-                        className={`block scroll-m-20 text-2xl font-semibold tracking-tight ${
-                            align ? "text-" + align : ""
-                        } `}
+                        className={`block scroll-m-20 text-2xl font-semibold tracking-tight ${align ? "text-" + align : ""
+                            } `}
                         style={{
                             ...marginFields.style(margin),
                             ...paddingFields.style(padding),
@@ -119,9 +116,8 @@ export const Heading = {
             case "h4":
                 return (
                     <h4
-                        className={`block scroll-m-20 text-xl font-semibold tracking-tight ${
-                            align ? "text-" + align : ""
-                        } `}
+                        className={`block scroll-m-20 text-xl font-semibold tracking-tight ${align ? "text-" + align : ""
+                            } `}
                         style={{
                             ...marginFields.style(margin),
                             ...paddingFields.style(padding),

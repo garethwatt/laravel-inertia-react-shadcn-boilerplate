@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { Autofield, FieldLabel } from "@measured/puck";
+import { AutoField, FieldLabel } from "@measured/puck";
 import { marginFields, paddingFields, textColorField } from "./CommonBlockProps";
 import { Input } from "@/shadcn/ui/input";
 import { ImageIcon } from "lucide-react";
@@ -32,7 +32,7 @@ export const Image = {
                                 reader.onload = (e) => {
                                     onChange(btoa(e.target.result))
                                 }
-                                    
+
                                 reader.readAsBinaryString(file);
                             }
 
@@ -68,7 +68,7 @@ export const Image = {
         width: "auto",
     },
     render: ({ src, padding, margin, align, alt, title, height, width, puck }) => {
-        if(!src) return <div className="w-full bg-slate-100 h-48 flex items-center justify-center">
+        if (!src) return <div className="w-full bg-slate-100 h-48 flex items-center justify-center">
             <ImageIcon className="w-8 h-8" />
         </div>
         return (

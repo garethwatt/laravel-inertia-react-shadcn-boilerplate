@@ -21,11 +21,12 @@ class Setting extends Model
         'radio',
     ];
 
+    // why no image field type?
 
 
     public static function getValues($groupKey = 'general')
     {
-        return Cache::rememberForever('settings.' . $groupKey, function() use($groupKey) {
+        return Cache::rememberForever('settings.' . $groupKey, function () use ($groupKey) {
             $settingGroup = SettingGroup::with('children.settings')->where('key', $groupKey)->first();
             $settings = $settingGroup->children->pluck('settings')->flatten();
             $values = [];
@@ -34,7 +35,6 @@ class Setting extends Model
             }
             return $values;
         });
-        
     }
 
     public function settingGroup()
