@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { Autofield } from "@measured/puck";
+import { AutoField } from "@measured/puck";
 import { bgColorField, borderField, borderRadiusField, marginFields, paddingFields, textColorField } from "./CommonBlockProps";
 import { AlignCenter, AlignLeft, AlignRight } from "lucide-react";
 
