@@ -21,12 +21,14 @@ npm install
 php artisan migrate --seed
 ```
 
-if cloning project:
+Generate key and link the storage directory:
+```bash
 php artisan key:generate
+php artisan storage:link
+```
 
-
-Login to backend:
-application-url/admin
+Login Details:
+site-url/admin
 user: admin@admin.com
 password: 123456789
 
